@@ -1,17 +1,17 @@
 <?php 
-//Define constants
-define("DB_HOST", "127.0.0.1");
-define("DB_SCHEMA", "beefoods");
-define("DB_USER", "beefoods");
-define("DB_PASSWORD", "root");
+  //Define constants
+  define("DB_HOST", "db_host");
+  define("DB_SCHEMA", "db_schema");
+  define("DB_USER", "db_user");
+  define("DB_PASSWORD", "db_password");
 
-$GLOBALS['DB'] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_SCHEMA);
+  $GLOBALS['DB'] = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_SCHEMA);
 
-if(!$GLOBALS['DB']){
+  if(!$GLOBALS['DB']){
     die("Error: Unable to connect to the database");
-}
+  }
 
-if(!mysqli_select_db($GLOBALS['DB'], DB_SCHEMA)){
+  if(!mysqli_select_db($GLOBALS['DB'], DB_SCHEMA)){
     die("Error: Unable to select database table (schema)");
-}
+  }
 ?>
