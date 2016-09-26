@@ -1,0 +1,30 @@
+header, section, form {
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+form {
+  width: 70%;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2em;
+  float: left;
+  width: 100%;
+}
+
+button {
+  padding: 5px;
+  font-size: 1.1em;
+}
